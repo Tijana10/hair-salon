@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap');
+
+:root {
+    --green: #8bc34a;
+    --transition: .3s ease;
+}
+
+/*******
+BASIC STYLES
+********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+img {
+    display: block;
+    width: 100%;
+}
+button.btn:hover {
+    background-color: transparent;
+    color: #ddd;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+i.fab:hover {
+    color: #ddd;
+    cursor: pointer;
+}
+
+/********
+NAV
+********/
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+
+}
+.nav-item a {
+    font-size: 1.3rem;
+}
+.active .nav-link{
+    color: var(--green)!important;
+    text-transform: uppercase;
+}
+nav li:nth-child(2) a,
+nav li:nth-child(3) a,
+nav li:nth-child(4) a,
+nav li:nth-child(5) a {
+    color: gray;
+    text-transform: uppercase;
+}
+nav li a:hover {
+    color: var(--green)!important;
+}
+
+/*******
+HEADER
+*********/
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.carousel-caption .green {
+    background: var(--green);
+    color: white;
+}
+
+/*********
+WELCOME
+*********/
+.welcome h3 {
+    font-weight: 600;
+    font-size: 2.5rem;
+
+}
+.welcome h3 i {
+ color: var(--green);
+}
+.welcome h5 {
+    color: var(--green);
+
+    font-size: 2rem;
+}
+.welcome button {
+    text-transform: uppercase;
+    color: var(--green);
+    transition: var(--transition);
+}
+
+/*********
+SERVICES
+*********/
+.services h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.services h2::after {
+    display: block;
+    content: "";
+    height: 2px;
+    background: var(--green);
+    width: 15%;
+    margin: 20px auto;
+}
+.services article div i {
+    color: var(--green);
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.services article div p.first {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/*********
+HAIRSTYLE
+********/
+.hairstyle div.col-md-5 {
+    margin-left: -65px;
+    padding: 50px 30px;
+}
+.hairstyle div.col-md-5 h5 {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.hairstyle div.col-md-5 h5::after {
+    display: block;
+    content: "";
+    height: 2px;
+    background: var(--green);
+    width: 10%;
+    margin-top: 10px;
+}
+
+/*********
+EXPERIENCE
+**********/
+.experience {
+    background-image:linear-gradient(rgba(59, 66, 71, .4),rgba(83, 91, 99, 0.4)), url(img/experience.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+.experience div {
+    height: 60vh;
+}
+.experience h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 0 0 2px gray;
+}
+.experience i {
+    color: white;
+    font-size: 3rem;
+}
+
+/********
+FOOTER
+*********/
+footer {
+    background: rgb(68,75,81);
+}
+footer h5 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+footer p {
+    color: rgb(148, 147, 147);
+    font-weight: 500;
+}
+footer input {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+footer button.btn {
+    background-color: var(--green);
+    color: black;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: 10px 20px;
+}
+footer .social i {
+    color: var(--green);
+    font-size: 1.8rem;
+    margin-left: 50px;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .hairstyle div.col-md-5 {
+        margin-left:0;
+        padding: 50px 30px;
+    }
+}
